@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+			<div class="input-control">
+                <label for="zip">Zip code</label>
+				<div id="message3">
+					<h3>Enter only 5 digits</h3>
+				</div>
+                <input id="zip"name="zip" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+				<div id="message">
+					<h3>Enter only VIT mail</h3>
+				</div>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+				<div id="message1">
+					<h3>Password must contain the following:</h3>
+					<ol>
+						<li><p id="letter" class="invalid">A lowercase letter</p></li>
+						<li><p id="capital" class="invalid">A capital letter</p></li>
+						<li><p id="number" class="invalid">A number</p></li>
+						<li><p id="length" class="invalid">Minimum 10 characters</p></li>
+					</ol>
+				  </div>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Retype Password</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error"></div>
+            </div> 
+			<div class="input-control">
+                <label for="mobile">Mobile Number</label>
+				<div id="message4">
+					<h3>Enter only 10 digit numbers</h3>
+				</div>
+                <input id="mobile"name="mobile" type="mobile">
+                <div class="error"></div>
+            </div>
+			<a href="./success.html">
+            	<button type="submit">Sign Up</button>
+			</a>
+        </form>
+    </div>
+</body>
+</html>
